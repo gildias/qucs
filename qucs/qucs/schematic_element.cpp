@@ -1226,6 +1226,7 @@ Element* Schematic::selectElement(float fX, float fY, bool flag, int *index)
                         pe_sel = pg;
                     }
                 }
+
             }
 
             if(flag)

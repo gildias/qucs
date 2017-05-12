@@ -50,7 +50,7 @@ Volt_ac::Volt_ac()
 		QObject::tr("initial phase in degrees")));
   Props.append(new Property("Theta", "0", false,
 		QObject::tr("damping factor (transient simulation only)")));
-  Props.append(new Property("Ri", "1e12 Ohm", false,
+  Props.append(new Property("Ri", "0 Ohm", false,
 		QObject::tr("ohmic resistance in Ohms")));
 
 

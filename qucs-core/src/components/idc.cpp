@@ -59,7 +59,6 @@ void idc::initDC (void) {
   // The internal resistance can't be zero
 }
 
-
 void idc::calcDC (void) {
   nr_double_t i = getPropertyDouble ("I");
   nr_double_t f = getNet()->getSrcFactor ();
@@ -79,7 +78,7 @@ void idc::initTR (void) {
 PROP_REQ [] = {
   { "I", PROP_REAL, { 1e-3, PROP_NO_STR }, PROP_NO_RANGE }, PROP_NO_PROP };
 PROP_OPT [] = { 
-  { "Ri", PROP_REAL, { 0, PROP_NO_STR }, PROP_NO_RANGE },
+  { "Ri", PROP_REAL, { 1e12, PROP_NO_STR }, PROP_NO_RANGE },
   PROP_NO_PROP };
 struct define_t idc::cirdef =
   { "Idc", 2, PROP_COMPONENT, PROP_NO_SUBSTRATE, PROP_LINEAR, PROP_DEF };
