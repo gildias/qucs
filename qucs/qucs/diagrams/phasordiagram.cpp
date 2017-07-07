@@ -291,7 +291,7 @@ Diagram* PhasorDiagram::newOne()
 // ------------------------------------------------------------
 Element* PhasorDiagram::info(QString& Name, char* &BitmapFile, bool getNewOne)
 {
-  Name = QObject::tr("Phasor(AC)");
+  Name = QObject::tr("AC Phasorial diagram");
   BitmapFile = (char *) "phasor";
 
   if(getNewOne)  return new PhasorDiagram();

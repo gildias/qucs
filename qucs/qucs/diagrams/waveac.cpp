@@ -319,7 +319,7 @@ Diagram* Waveac::newOne()
 // ------------------------------------------------------------
 Element* Waveac::info(QString& Name, char* &BitmapFile, bool getNewOne)
 {
-  Name = QObject::tr("Temporal Diagram(AC)");
+  Name = QObject::tr("AC Temporal diagram");
   BitmapFile = (char *) "wave";
 
   if(getNewOne)  return new Waveac();
