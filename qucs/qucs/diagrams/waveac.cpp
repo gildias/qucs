@@ -217,7 +217,6 @@ Frame:
 
 void Waveac::calcData(Graph *g)
 {
-  double *px;
   double *pz = g->cPointsY;
   if(!pz)  return;
   if(g->numAxes() < 1) return;
